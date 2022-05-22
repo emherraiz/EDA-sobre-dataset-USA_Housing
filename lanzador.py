@@ -13,8 +13,12 @@ columnas = df.columns
 # Cantidad de filas
 n = df.shape[0]
 
-# Observamos que no hay datos vacíos, en el caso de que los hubiera tenemos que ajustar nuestro dataframe
+## 1 - Graficamos las variables implicadas y la correlacion qeu existe entre ellas
+sns.pairplot(df)
+plt.show()
+
+# 2 - Observamos que no hay datos vacíos, en el caso de que los hubiera tenemos que ajustar nuestro dataframe
 print(df.isnull().sum())
 
-x = sns.pairplot(df)
+
 
